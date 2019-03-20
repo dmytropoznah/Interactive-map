@@ -1,0 +1,333 @@
+body{margin: 0; padding: 0;}
+	
+	.text{
+		color: green;
+		font-family: Calibri;
+		font-size: 300%;
+	}
+	.main{
+		background: grey;
+		width: 80%;
+		height:1400px;
+	}
+	.map{
+		margin-left: calc(100% - 1120px);
+		/*background: #9ed3f4;*/
+		width: 1000px;
+		height: 500px;
+	}
+	.block{
+		height: 120px;
+		width: 120px;
+		/*background: red;*/
+		float: left;
+		border: 1px solid white;
+	}
+	.volyn{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 75px;
+		margin-left: 190px;	
+       -webkit-clip-path: polygon(71% 24%, 64% 33%, 65% 43%, 72% 44%, 74% 60%, 68% 69%, 60% 67%, 52% 77%, 39% 74%, 38% 67%, 32% 66%, 20% 31%, 36% 32%, 40% 26%);
+		clip-path: polygon(71% 24%, 64% 33%, 65% 43%, 72% 44%, 74% 60%, 68% 69%, 60% 67%, 52% 77%, 39% 74%, 38% 67%, 32% 66%, 20% 31%, 36% 32%, 40% 26%);
+	}
+	.volyn:hover{
+		background: #4dcc00;
+	}
+	.rivne{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 85px;
+		margin-left: 125px;
+       -webkit-clip-path: polygon(26% 27%, 34% 18%, 76% 33%, 62% 53%, 64% 61%, 60% 67%, 39% 80%, 37% 76%, 21% 83%, 15% 79%, 15% 71%, 22% 61%, 31% 63%, 37% 55%, 35% 38%, 28% 38%);
+		clip-path: polygon(26% 27%, 34% 18%, 76% 33%, 62% 53%, 64% 61%, 60% 67%, 39% 80%, 37% 76%, 21% 83%, 15% 79%, 15% 71%, 22% 61%, 31% 63%, 37% 55%, 35% 38%, 28% 38%);
+	}
+	.rivne:hover{
+		background: #4dcc00;
+	}
+	.jytomyr{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 109px;
+		margin-left: 58px;
+       -webkit-clip-path: polygon(34% 79%, 59% 75%, 60% 85%, 71% 83%, 76% 72%, 68% 32%, 71% 18%, 38% 16%, 23% 36%, 25% 43%, 22% 49%, 24% 54%, 23% 57%, 31% 63%, 28% 73%);
+		clip-path: polygon(34% 79%, 59% 75%, 60% 85%, 71% 83%, 76% 72%, 68% 32%, 71% 18%, 38% 16%, 23% 36%, 25% 43%, 22% 49%, 24% 54%, 23% 57%, 31% 63%, 28% 73%);
+	}
+	.jytomyr:hover{
+		background: #4dcc00;
+	}
+	.kyiv{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 120px;
+		margin-left: -5px;
+       -webkit-clip-path: polygon(79% 41%, 84% 51%, 71% 69%, 68% 65%, 62% 68%, 57% 84%, 31% 90%, 26% 83%, 26% 74%, 31% 63%, 23% 23%, 26% 9%, 39% 11%, 48% 18%, 54% 37%, 63% 36%, 73% 45%);
+		clip-path: polygon(79% 41%, 84% 51%, 71% 69%, 68% 65%, 62% 68%, 57% 84%, 31% 90%, 26% 83%, 26% 74%, 31% 63%, 23% 23%, 26% 9%, 39% 11%, 48% 18%, 54% 37%, 63% 36%, 73% 45%);
+	}
+	.kyiv:hover{
+		background: #4dcc00;
+	}
+	.chernigiv{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 74px;
+		margin-left: -87px;
+       -webkit-clip-path: polygon(68% 57%, 75% 60%, 74% 76%, 65% 85%, 58% 82%, 53% 85%, 47% 75%, 41% 80%, 32% 70%, 25% 71%, 23% 70%, 17% 52%, 27% 26%, 57% 25%, 71% 15%, 78% 15%);
+		clip-path: polygon(68% 57%, 75% 60%, 74% 76%, 65% 85%, 58% 82%, 53% 85%, 47% 75%, 41% 80%, 32% 70%, 25% 71%, 23% 70%, 17% 52%, 27% 26%, 57% 25%, 71% 15%, 78% 15%);
+	}
+	.chernigiv:hover{
+		background: #4dcc00;
+	}
+	.sumy{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 71px;
+		margin-left: -152px;
+       -webkit-clip-path: polygon(37% 13%, 45% 12%, 56% 49%, 73% 51%, 84% 77%, 63% 88%, 56% 75%, 33% 74%, 34% 57%, 27% 55%);
+		clip-path: polygon(37% 13%, 45% 12%, 56% 49%, 73% 51%, 84% 77%, 63% 88%, 56% 75%, 33% 74%, 34% 57%, 27% 55%);
+	}
+	.sumy:hover{
+		background: #4dcc00;
+	}
+	.harkiv{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 148px;
+		margin-left: -205px;
+       -webkit-clip-path: polygon(60% 80%, 58% 74%, 73% 63%, 83% 69%, 87% 66%, 84% 35%, 67% 18%, 53% 27%, 39% 19%, 15% 29%, 13% 38%, 27% 47%, 18% 65%, 41% 69%, 49% 83%);
+		clip-path: polygon(60% 80%, 58% 74%, 73% 63%, 83% 69%, 87% 66%, 84% 35%, 67% 18%, 53% 27%, 39% 19%, 15% 29%, 13% 38%, 27% 47%, 18% 65%, 41% 69%, 49% 83%);
+	}
+	.harkiv:hover{
+		background: #4dcc00;
+	}
+	.lugansk{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 169px;
+		margin-left: -240px;
+       -webkit-clip-path: polygon(61% 46%, 71% 36%, 69% 25%, 27% 14%, 23% 21%, 25% 52%, 32% 56%, 31% 67%, 54% 86%, 68% 85%, 68% 61%);
+		clip-path: polygon(61% 46%, 71% 36%, 69% 25%, 27% 14%, 23% 21%, 25% 52%, 32% 56%, 31% 67%, 54% 86%, 68% 85%, 68% 61%);
+	}
+	.lugansk:hover{
+		background: #4dcc00;
+	}
+	
+	.lviv{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 12px;
+		margin-left: 155px;
+       -webkit-clip-path: polygon(65% 63%, 80% 53%, 81% 46%, 75% 43%, 75% 35%, 62% 33%, 61% 26%, 54% 24%, 49% 33%, 19% 56%, 23% 82%, 36% 88%, 40% 76%, 55% 74%, 58% 63%);
+		clip-path: polygon(65% 63%, 80% 53%, 81% 46%, 75% 43%, 75% 35%, 62% 33%, 61% 26%, 54% 24%, 49% 33%, 19% 56%, 23% 82%, 36% 88%, 40% 76%, 55% 74%, 58% 63%);
+	}
+	.lviv:hover{
+		background: #4dcc00;
+	}
+	
+	.ternopil{
+		height: 120px;
+		width: 120px;
+		margin-top: 40px;
+		margin-left: 85px;
+		background: green;
+       -webkit-clip-path: polygon(67% 80%, 64% 73%, 67% 24%, 65% 20%, 49% 26%, 48% 32%, 33% 43%, 35% 60%, 50% 69%, 50% 74%, 60% 76%);
+		clip-path: polygon(67% 80%, 64% 73%, 67% 24%, 65% 20%, 49% 26%, 48% 32%, 33% 43%, 35% 60%, 50% 69%, 50% 74%, 60% 76%);
+	}
+	.ternopil:hover{
+		background: #4dcc00;
+	}
+	
+	.hmelnytsk{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 29px;
+		margin-left: 9px;
+       -webkit-clip-path: polygon(52% 85%, 56% 83%, 57% 71%, 61% 66%, 66% 68%, 69% 63%, 66% 55%, 68% 47%, 62% 41%, 65% 30%, 56% 24%, 58% 21%, 55% 17%, 34% 30%, 31% 79%, 34% 86%, 42% 84%);
+		clip-path: polygon(52% 85%, 56% 83%, 57% 71%, 61% 66%, 66% 68%, 69% 63%, 66% 55%, 68% 47%, 62% 41%, 65% 30%, 56% 24%, 58% 21%, 55% 17%, 34% 30%, 31% 79%, 34% 86%, 42% 84%);
+	}
+	.hmelnytsk:hover{
+		background: #4dcc00;
+	}
+	
+	.vinnytsa{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 62px;
+		margin-left: -63px;
+       -webkit-clip-path: polygon(56% 18%, 57% 28%, 68% 26%, 68% 36%, 73% 43%, 69% 47%, 80% 67%, 74% 70%, 79% 76%, 72% 76%, 70% 80%, 57% 77%, 55% 82%, 22% 65%, 20% 57%, 21% 47%, 24% 42%, 30% 43%, 33% 39%, 29% 31%, 31% 22%);
+		clip-path: polygon(56% 18%, 57% 28%, 68% 26%, 68% 36%, 73% 43%, 69% 47%, 80% 67%, 74% 70%, 79% 76%, 72% 76%, 70% 80%, 57% 77%, 55% 82%, 22% 65%, 20% 57%, 21% 47%, 24% 42%, 30% 43%, 33% 39%, 29% 31%, 31% 22%);
+	}
+	.vinnytsa:hover{
+		background: #4dcc00;
+	}
+	
+	.cherkasy{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 45px;
+		margin-left: -100px;
+       -webkit-clip-path: polygon(92% 62%, 77% 65%, 70% 59%, 65% 65%, 56% 62%, 49% 71%, 32% 70%, 18% 80%, 8% 61%, 12% 57%, 37% 50%, 42% 34%, 48% 31%, 51% 36%, 63% 20%);
+		clip-path: polygon(92% 62%, 77% 65%, 70% 59%, 65% 65%, 56% 62%, 49% 71%, 32% 70%, 18% 80%, 8% 61%, 12% 57%, 37% 50%, 42% 34%, 48% 31%, 51% 36%, 63% 20%);
+	}
+	.cherkasy:hover{
+		background: #4dcc00;
+	}
+	.poltava{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 25px;
+		margin-left: -160px;
+       -webkit-clip-path: polygon(42% 74%, 63% 80%, 65% 69%, 78% 65%, 87% 49%, 73% 39%, 75% 30%, 66% 34%, 59% 21%, 36% 20%, 27% 29%, 19% 26%, 13% 32%);
+		clip-path: polygon(42% 74%, 63% 80%, 65% 69%, 78% 65%, 87% 49%, 73% 39%, 75% 30%, 66% 34%, 59% 21%, 36% 20%, 27% 29%, 19% 26%, 13% 32%);
+	}
+	.poltava:hover{
+		background: #4dcc00;
+	}
+	.dnipropetrovsk{
+		height: 110px;
+		width: 110px;
+		background: green;
+		margin-top: 90px;
+		margin-left: -238px;
+       -webkit-clip-path: polygon(78% 39%, 89% 37%, 94% 53%, 87% 55%, 86% 63%, 78% 66%, 72% 56%, 47% 57%, 49% 76%, 25% 79%, 7% 78%, 6% 59%, 17% 54%, 15% 45%, 33% 35%, 35% 24%, 47% 21%, 70% 25%);
+		clip-path: polygon(78% 39%, 89% 37%, 94% 53%, 87% 55%, 86% 63%, 78% 66%, 72% 56%, 47% 57%, 49% 76%, 25% 79%, 7% 78%, 6% 59%, 17% 54%, 15% 45%, 33% 35%, 35% 24%, 47% 21%, 70% 25%);
+	}
+	.dnipropetrovsk:hover{
+		background: #4dcc00;
+	}
+	.donetsk{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 100px;
+		margin-left: -277px;
+       -webkit-clip-path: polygon(51% 15%, 58% 19%, 56% 30%, 79% 48%, 73% 48%, 72% 56%, 63% 59%, 60% 79%, 35% 89%, 31% 75%, 38% 68%, 21% 55%, 21% 47%, 28% 46%, 22% 22%, 37% 12%, 47% 18%);
+		clip-path: polygon(51% 15%, 58% 19%, 56% 30%, 79% 48%, 73% 48%, 72% 56%, 63% 59%, 60% 79%, 35% 89%, 31% 75%, 38% 68%, 21% 55%, 21% 47%, 28% 46%, 22% 22%, 37% 12%, 47% 18%);
+	}
+	.donetsk:hover{
+		background: #4dcc00;
+	}
+	.zakarpatta{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: -40px;
+		margin-left: 135px;
+       -webkit-clip-path: polygon(58% 47%, 64% 47%, 65% 52%, 72% 57%, 74% 64%, 71% 67%, 44% 59%, 35% 62%, 17% 44%, 28% 23%, 38% 27%, 38% 32%, 51% 38%);
+		clip-path: polygon(58% 47%, 64% 47%, 65% 52%, 72% 57%, 74% 64%, 71% 67%, 44% 59%, 35% 62%, 17% 44%, 28% 23%, 38% 27%, 38% 32%, 51% 38%);
+	}
+	.zakarpatta:hover{
+		background: #4dcc00;
+	}
+	.frankivsk{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: -53px;
+		margin-left: 55px;
+       -webkit-clip-path: polygon(51% 22%, 54% 39%, 69% 48%, 69% 62%, 65% 61%, 53% 73%, 51% 85%, 42% 75%, 46% 72%, 44% 66%, 36% 60%, 36% 55%, 30% 55%, 23% 46%, 26% 35%, 42% 33%, 45% 21%);
+		clip-path: polygon(51% 22%, 54% 39%, 69% 48%, 69% 62%, 65% 61%, 53% 73%, 51% 85%, 42% 75%, 46% 72%, 44% 66%, 36% 60%, 36% 55%, 30% 55%, 23% 46%, 26% 35%, 42% 33%, 45% 21%);
+	}
+	.frankivsk:hover{
+		background: #4dcc00;
+	}
+	
+	.chernivci{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: -30px;
+		margin-left: -25px;
+       -webkit-clip-path: polygon(78% 39%, 80% 45%, 52% 60%, 31% 63%, 21% 69%, 22% 57%, 34% 45%, 38% 46%, 38% 37%, 49% 39%, 55% 43%, 63% 40%, 73% 42%);
+		clip-path: polygon(78% 39%, 80% 45%, 52% 60%, 31% 63%, 21% 69%, 22% 57%, 34% 45%, 38% 46%, 38% 37%, 49% 39%, 55% 43%, 63% 40%, 73% 42%);
+	}
+	.chernivci:hover{
+		background: #4dcc00;
+	}
+	.odesa{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 43px;
+		margin-left: -53px;
+       -webkit-clip-path: polygon(31% 99%, 64% 100%, 67% 83%, 81% 74%, 73% 60%, 85% 68%, 89% 57%, 97% 54%, 100% 39%, 92% 32%, 92% 22%, 80% 20%, 77% 3%, 70% 0%, 63% 1%, 61% 5%, 49% 1%, 47% 6%, 51% 8%, 51% 25%, 68% 47%, 69% 62%, 45% 58%, 45% 76%, 33% 88%);
+		clip-path: polygon(31% 99%, 64% 100%, 67% 83%, 81% 74%, 73% 60%, 85% 68%, 89% 57%, 97% 54%, 100% 39%, 92% 32%, 92% 22%, 80% 20%, 77% 3%, 70% 0%, 63% 1%, 61% 5%, 49% 1%, 47% 6%, 51% 8%, 51% 25%, 68% 47%, 69% 62%, 45% 58%, 45% 76%, 33% 88%);
+	}
+	.odesa:hover{
+		background: #4dcc00;
+	}
+	.kirovograd{
+		height: 110px;
+		width: 110px;
+		background: green;
+		margin-top: -27px;
+		margin-left: -80px;
+       -webkit-clip-path: polygon(100% 33%, 83% 43%, 85% 52%, 67% 61%, 65% 69%, 48% 69%, 45% 59%, 11% 59%, 0 51%, 20% 36%, 36% 37%, 44% 29%, 52% 31%, 58% 25%, 64% 31%, 79% 28%);
+		clip-path: polygon(100% 33%, 83% 43%, 85% 52%, 67% 61%, 65% 69%, 48% 69%, 45% 59%, 11% 59%, 0 51%, 20% 36%, 36% 37%, 44% 29%, 52% 31%, 58% 25%, 64% 31%, 79% 28%);
+	}
+	.kirovograd:hover{
+		background: #4dcc00;
+	}
+	.mykolaiv{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 15px;
+		margin-left: -210px;
+       -webkit-clip-path: polygon(66% 34%, 69% 26%, 76% 22%, 78% 53%, 72% 57%, 76% 61%, 42% 78%, 33% 75%, 36% 59%, 28% 52%, 28% 43%, 16% 41%, 13% 24%, 46% 25%, 50% 34%);
+		clip-path: polygon(66% 34%, 69% 26%, 76% 22%, 78% 53%, 72% 57%, 76% 61%, 42% 78%, 33% 75%, 36% 59%, 28% 52%, 28% 43%, 16% 41%, 13% 24%, 46% 25%, 50% 34%);
+	}
+	.mykolaiv:hover{
+		background: #4dcc00;
+	}
+	.herson{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 45px;
+		margin-left: -283px;
+       -webkit-clip-path: polygon(49% 69%, 53% 72%, 61% 68%, 86% 67%, 93% 62%, 75% 29%, 64% 30%, 61% 23%, 43% 21%, 43% 33%, 37% 37%, 41% 41%, 8% 57%, 17% 61%, 17% 67%, 30% 74%);
+		clip-path: polygon(49% 69%, 53% 72%, 61% 68%, 86% 67%, 93% 62%, 75% 29%, 64% 30%, 61% 23%, 43% 21%, 43% 33%, 37% 37%, 41% 41%, 8% 57%, 17% 61%, 17% 67%, 30% 74%);
+	}
+	.herson:hover{
+		background: #4dcc00;
+	}
+	.krym{
+		height: 120px;
+		width: 120px;
+		background: green;
+		margin-top: 95px;
+		margin-left: -365px;
+       -webkit-clip-path: polygon(64% 58%, 99% 50%, 98% 67%, 84% 70%, 76% 65%, 67% 77%, 57% 75%, 43% 92%, 27% 89%, 28% 69%, 15% 59%, 1% 62%, 1% 57%, 29% 40%, 23% 34%, 32% 31%, 55% 42%);
+		clip-path: polygon(64% 58%, 99% 50%, 98% 67%, 84% 70%, 76% 65%, 67% 77%, 57% 75%, 43% 92%, 27% 89%, 28% 69%, 15% 59%, 1% 62%, 1% 57%, 29% 40%, 23% 34%, 32% 31%, 55% 42%);
+	}
+	.krym:hover{
+		background: #4dcc00;
+	}
+	.zaporijja{
+		height: 110px;
+		width: 105px;
+		background: green;
+		margin-top: -105px;
+		margin-left: 520px;
+       -webkit-clip-path: polygon(87% 43%, 80% 49%, 85% 62%, 71% 72%, 60% 71%, 42% 84%, 24% 52%, 13% 53%, 10% 45%, 34% 42%, 31% 24%, 57% 23%, 62% 32%, 71% 29%);
+		clip-path: polygon(87% 43%, 80% 49%, 85% 62%, 71% 72%, 60% 71%, 42% 84%, 24% 52%, 13% 53%, 10% 45%, 34% 42%, 31% 24%, 57% 23%, 62% 32%, 71% 29%);
+	}
+	.zaporijja:hover{
+		background: #4dcc00;
+	}
+
+	
