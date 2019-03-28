@@ -3,13 +3,14 @@
 <head>
 	<title>Tect</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
 </head>
 <body>
 <center>
-	<h1 class="text">Енциклопедія сільського господарства України mybitch</h1>
+	<h1 class="text saira">Енциклопедія сільського господарства України mybitch</h1>
 </center>
  <div class="map">
- 	<div class="block"><div class="volyn"></div></div>
+ 	<div class="block"><div class="volyn" onclick="showpls()"></div></div>
  	<div class="block"><div class="rivne"></div></div>
  	<div class="block"><div class="jytomyr"></div></div>
  	<div class="block"><div class="kyiv"></div></div>
@@ -37,8 +38,32 @@
  </div>
  <center>
  	<div class="main">
+ 		<button>test</button>
+ 		<h1 id="one"></h1>
+
+ 		<div class="volyn-b" id="volyn">
+ 			
+ 		</div>
  		
  	</div>
  </center>
 </body>
+<script type="text/javascript">
+
+	function showpls() {
+		var elem = document.getElementById("one");
+		elem.innerText = "ВОЛИНЬ";
+		
+		document.getElementById("volyn").style.display = "block";
+	}
+
+
+
+
+
+
+
+
+
+</script>
 </html>
