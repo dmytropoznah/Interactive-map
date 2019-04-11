@@ -1,157 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ввввввввввt</title>
+	<title>diplom</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
+
 <body>
+
 <center>
+
 	<h1 class="text poiret">Енциклопедія сільського господарства України </h1>
+  <div class="selectPage select-text" id="selectID">
+ 
+    <div class="poiret"><h1> ПОСІВНІ ПЛОЩІ СІЛЬСЬКОГОСПОДАРСЬКИХ КУЛЬТУР ЗА: </h1></div>     
+
+        
+        <h1>Сільськогосподарські культури:</h1>
+        <select name="select" id="zerno">
+        <optgroup label="Культури зернові та зернобобові:"> 
+          <optgroup label="Пшениця:">
+          <option value="t1">Пшениця озима</option>
+                  <option value="t2">Пшениця яра</option>
+                </optgroup> 
+                <option value="t3">Кукурудза на зерно</option>
+                <optgroup label="Ячмінь:">
+                  <option  value="t4">Ячмінь озимий</option>
+                  <option  value="t5">Ячмінь ярий</option>
+                </optgroup>
+                <optgroup label="Жито:">
+                  <option  value="t6">Жито озиме</option>
+                  <option  value="t7">Жито яре</option>
+                </optgroup>
+                <optgroup label="Тритикале:">
+                  <option  value="t8">Тритикале озиме</option>
+                  <option  value="t9">Тритикале яре</option>
+                </optgroup>
+                <option  value="t10">Овес</option>
+                <option  value="t11">Гречка</option>
+                <option  value="t12">Сорго</option>
+                <option  value="t13">Просо</option>
+                <option  value="t14">Рис</option>
+                <option  value="t15">Квасоля</option>
+                <option  value="t16">Горох</option>
+                <option  value="t17">Вика</option>
+                <option  value="t18">Люпин солодкий</option>
+        </optgroup> 
+        <optgroup label="Культури технічні:"> 
+          <option  value="t19">Соя</option>
+          <option  value="t20">Арахіс</option>
+          <option  value="t21">Льон кудряш(олійний)</option>
+          <option  value="t22">Гірчиця</option>
+          <optgroup label="Ріпак озимий та кольза (ріпак ярий):">
+            <option value="t23">Ріпак озимий</option>
+            <option value="t24">Кольза (Ріпак ярий)</option>
+          </optgroup>
+          <option value="t25">Соняшник</option>
+          <option value="t26">Мак олійний</option>
+          <option value="t27">Льон-довгунець</option>
+          <option value="t28">Коноплі</option>
+          <option value="t29">Буряк цукровий фабричний</option>
+          <option value="t30">Буряк цукровий маточний</option>
+          <option value="t31">Насінники буряку цукрового</option>
+          <option value="t32">Прянощі</option>
+          <option value="t33">Рослини ефіролійні</option>
+          <option value="t34">Рослини лікарські</option>
+          <option value="t35">Тютюн</option>
+        </optgroup>     
+              <optgroup label="Коренеплоди та бульбоплоди, культури овочеві та баштанні продовольчі:">
+                <option value="t36">Картопля</option>
+                <optgroup label="Культури овочеві відкритого типу (без насінників і маточників):">
+                  <option value="t37">Капуста</option>
+                  <option value="t38">Перець стручковий солодкий</option>
+                  <option value="t39">Перець стручковий гіркий</option>
+                  <option value="t40">Огірки та корнішони</option>
+                  <option value="t41">Баклажани</option>
+                  <option value="t42">Помідори</option>
+                  <option value="t43">Гарбузи столові</option>
+                  <option value="t44">Кабачки столові</option>
+                  <option value="t45">Часник</option>
+                  <option value="t46">Цибуля</option>
+                  <option value="t47">Горох зелений</option>
+                  <option value="t48">Морква столова</option>
+                  <option value="t49">Буряк столовий</option>
+                </optgroup>
+                <optgroup label="Культури баштанні продовольчі:">
+                  <option value="t50">Кавуни</option>
+                  <option value="t51">Дині</option>
+                </optgroup>
+                <option value="t52">Насінники культур овочевих</option>
+              </optgroup>
+              <optgroup label="Культури кормові:">
+                <option value="t53">Коренеплоди кормові</option>
+                <option value="t54">Буряк цукровий кормовий</option>
+                <option value="t55">Культури кормові баштанні</option>
+                <option value="t56">Кукурудза кормова</option>
+                <option value="t57">Трави однорічні</option>
+                <option value="t58">Трави багаторічні</option>
+                <option value="t59">Насінники та маточники культур</option>
+              </optgroup>
+            </select>
+
+
+            <br><button onclick="search()" style="margin-top: 10px;">ВИРАХУВАТИ</button>
+  </div>
 </center>
+
+
  <div class="map">
- 	<div class="block"><div class="volyn"          onclick="volynClick()" 		   title="Волинська область"></div></div>
- 	<div class="block"><div class="rivne"   	   onclick="rivneClick()"  		   title="Рівненська область"></div></div>
- 	<div class="block"><div class="jytomyr" 	   onclick="jytomyrClick()" 	   title="Житомирська область"></div></div>
- 	<div class="block"><div class="kyiv"    	   onclick="kyivClick()" 		   title="Київська область"></div></div>
+ 	<div class="block"><div class="volyn"          onclick="volynClick()" 		     title="Волинська область"></div></div>
+ 	<div class="block"><div class="rivne"   	     onclick="rivneClick()"  		     title="Рівненська область"></div></div>
+ 	<div class="block"><div class="jytomyr" 	     onclick="jytomyrClick()" 	     title="Житомирська область"></div></div>
+ 	<div class="block"><div class="kyiv"    	     onclick="kyivClick()" 		       title="Київська область"></div></div>
  	<div class="block"><div class="chernigiv"      onclick="chernigivClick()"      title="Чернігівська область"></div></div>
- 	<div class="block"><div class="sumy"           onclick="sumyClick()" 		   title="Сумська область"></div></div>
+ 	<div class="block"><div class="sumy"           onclick="sumyClick()" 		       title="Сумська область"></div></div>
  	<div class="block"><div class="harkiv"         onclick="harkivClick()"         title="Харківська область"></div></div>
  	<div class="block"><div class="lugansk"        onclick="luganskClick()"        title="Луганська область"></div></div>
- 	<div class="block"><div class="lviv"           onclick="lvivClick()" 		   title="Львівська область"></div></div>
+ 	<div class="block"><div class="lviv"           onclick="lvivClick()" 		       title="Львівська область"></div></div>
  	<div class="block"><div class="ternopil"       onclick="ternopilClick()"       title="Тернопільська область"></div></div>
  	<div class="block"><div class="hmelnytsk"      onclick="hmelnytskClick()" 	   title="Хмельницька область"></div></div>
- 	<div class="block"><div class="vinnytsa"       onclick="vinnytsaClick()" 	   title="Вінницька область"></div></div>
- 	<div class="block"><div class="cherkasy"       onclick="cherkasyClick()" 	   title="Черкаська область"></div></div>
+ 	<div class="block"><div class="vinnytsa"       onclick="vinnytsaClick()" 	     title="Вінницька область"></div></div>
+ 	<div class="block"><div class="cherkasy"       onclick="cherkasyClick()" 	     title="Черкаська область"></div></div>
  	<div class="block"><div class="poltava"        onclick="poltavaClick()"        title="Полтавська область"></div></div>
  	<div class="block"><div class="dnipropetrovsk" onclick="dnipropetrovskClick()" title="Дніпропетровська область"></div></div>
- 	<div class="block"><div class="donetsk"        onclick="donetskClick()" 	   title="Донецька область"></div></div>
+ 	<div class="block"><div class="donetsk"        onclick="donetskClick()" 	     title="Донецька область"></div></div>
  	<div class="block"><div class="zakarpatta"     onclick="zakarpattaClick()" 	   title="Закарпатська область"></div></div>
  	<div class="block"><div class="frankivsk" 	   onclick="frankivskClick()"      title="Івано-франківська область"></div></div>
  	<div class="block"><div class="chernivci"  	   onclick="chernivciClick()"      title="Чернівецька область"></div></div>
- 	<div class="block"><div class="odesa" 		   onclick="odesaClick()"		   title="Одеська область"></div></div>
+ 	<div class="block"><div class="odesa" 		     onclick="odesaClick()"		       title="Одеська область"></div></div>
  	<div class="block"><div class="kirovograd"     onclick="kirovogradClick()"	   title="Кіровоградська область"></div></div>
- 	<div class="block"><div class="mykolaiv" 	   onclick="mykolaivClick()"	   title="Миколаївська область"></div></div>
- 	<div class="block"><div class="herson"		   onclick="hersonClick()"		   title="Херсонська область"></div></div>
- 	<div class="block"><div class="krym" 		   onclick="krymClick()" 		   title="АР Крим"></div></div>
+ 	<div class="block"><div class="mykolaiv" 	     onclick="mykolaivClick()"	     title="Миколаївська область"></div></div>
+ 	<div class="block"><div class="herson"		     onclick="hersonClick()"		     title="Херсонська область"></div></div>
+ 	<div class="block"><div class="krym" 		       onclick="krymClick()" 		       title="АР Крим"></div></div>
  	<div class="block"><div class="zaporijja"      onclick="zaporijjaClick()" 	   title="Запорізька область"></div></div>
  </div>
- <center>
 
- 	<div class="main">
- 		<h1 id="nameobl">...</h1>
- 	</div>
+
+<center>
+<div class="selectPage select-text" id="selectID">
  
- 	<div class="selectPage select-text" id="selectID">
- 
- 		<div class="poiret"><h1> ПОСІВНІ ПЛОЩІ СІЛЬСЬКОГОСПОДАРСЬКИХ КУЛЬТУР ЗА: </h1></div>
- 		<h1>Рік:</h1>
- 		
- 		    <select name="select" id="year"> <!-- selector rokiv -->
- 			  <option id="val1" value="value1" selected>2010</option> 
-              <option value="value2" >2011</option>
-              <option value="value3">2012</option>
-              <option value="value4">2013</option>
-              <option value="value5">2014</option>
-              <option value="value6">2015</option>
-              <option value="value7">2016</option>
-              <option value="value8">2017</option>
-              <option value="value9">2018</option>
-            </select>
-       
-        
-        <h1>Сільськогосподарські культури:</h1>
- 		    <select name="select" id="zerno">
- 			  <optgroup label="Культури зернові та зернобобові:"> 
- 			  	<optgroup label="Пшениця:">
-					<option value="t1">Пшениця озима</option>
-              		<option value="t2">Пшениця яра</option>
-              	</optgroup>	
-              	<option value="t3">Кукурудза на зерно</option>
-              	<optgroup label="Ячмінь:">
-              		<option  value="t4">Ячмінь озимий</option>
-              		<option  value="t5">Ячмінь ярий</option>
-              	</optgroup>
-              	<optgroup label="Жито:">
-              		<option  value="t6">Жито озиме</option>
-              		<option  value="t7">Жито яре</option>
-              	</optgroup>
-              	<optgroup label="Тритикале:">
-              		<option  value="t8">Тритикале озиме</option>
-              		<option  value="t9">Тритикале яре</option>
-              	</optgroup>
-              	<option  value="t10">Овес</option>
-              	<option  value="t11">Гречка</option>
-              	<option  value="t12">Сорго</option>
-              	<option  value="t13">Просо</option>
-              	<option  value="t14">Рис</option>
-              	<option  value="t15">Квасоля</option>
-              	<option  value="t16">Горох</option>
-              	<option  value="t17">Вика</option>
-              	<option  value="t18">Люпин солодкий</option>
- 			  </optgroup>	
- 			  <optgroup label="Культури технічні:">	
- 			  	<option  value="t19">Соя</option>
- 			  	<option  value="t20">Арахіс</option>
- 			  	<option  value="t21">Льон кудряш(олійний)</option>
- 			  	<option  value="t22">Гірчиця</option>
- 			  	<optgroup label="Ріпак озимий та кольза (ріпак ярий):">
- 			  		<option value="t23">Ріпак озимий</option>
- 			  		<option value="t24">Кольза (Ріпак ярий)</option>
- 			  	</optgroup>
- 			  	<option value="t25">Соняшник</option>
- 			  	<option value="t26">Мак олійний</option>
- 			  	<option value="t27">Льон-довгунець</option>
- 			  	<option value="t28">Коноплі</option>
- 			  	<option value="t29">Буряк цукровий фабричний</option>
- 			  	<option value="t30">Буряк цукровий маточний</option>
- 			  	<option value="t31">Насінники буряку цукрового</option>
- 			  	<option value="t32">Прянощі</option>
- 			  	<option value="t33">Рослини ефіролійні</option>
- 			  	<option value="t34">Рослини лікарські</option>
- 			  	<option value="t35">Тютюн</option>
- 			  </optgroup>			
-              <optgroup label="Коренеплоди та бульбоплоди, культури овочеві та баштанні продовольчі:">
-              	<option value="t36">Картопля</option>
-              	<optgroup label="Культури овочеві відкритого типу (без насінників і маточників):">
-              		<option value="t37">Капуста</option>
-              		<option value="t38">Перець стручковий солодкий</option>
-              		<option value="t39">Перець стручковий гіркий</option>
-              		<option value="t40">Огірки та корнішони</option>
-              		<option value="t41">Баклажани</option>
-              		<option value="t42">Помідори</option>
-              		<option value="t43">Гарбузи столові</option>
-              		<option value="t44">Кабачки столові</option>
-              		<option value="t45">Часник</option>
-              		<option value="t46">Цибуля</option>
-              		<option value="t47">Горох зелений</option>
-              		<option value="t48">Морква столова</option>
-              		<option value="t49">Буряк столовий</option>
-              	</optgroup>
-              	<optgroup label="Культури баштанні продовольчі:">
-              		<option value="t50">Кавуни</option>
-              		<option value="t51">Дині</option>
-              	</optgroup>
-              	<option value="t52">Насінники культур овочевих</option>
-              </optgroup>
-              <optgroup label="Культури кормові:">
-              	<option value="t53">Коренеплоди кормові</option>
-              	<option value="t54">Буряк цукровий кормовий</option>
-              	<option value="t55">Культури кормові баштанні</option>
-              	<option value="t56">Кукурудза кормова</option>
-              	<option value="t57">Трави однорічні</option>
-              	<option value="t58">Трави багаторічні</option>
-              	<option value="t59">Насінники та маточники культур</option>
-              </optgroup>
-            </select>
+    <div class="poiret"><h1> GRAPHICS </h1></div>     
 
+</div>
 
-            <br><button onclick="search()">ВИРАХУВАТИ</button>
- 	</div>
- </center>
+<div class="graphic flex">
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+  <div class="graphic-block"></div>
+</div>
+
+<div class="graphic flex">
+  <div class="graphic-text">2010</div>
+  <div class="graphic-text">2011</div>
+  <div class="graphic-text">2012</div>
+  <div class="graphic-text">2013</div>
+  <div class="graphic-text">2014</div>
+  <div class="graphic-text">2015</div>
+  <div class="graphic-text">2016</div>
+  <div class="graphic-text">2017</div>
+  <div class="graphic-text">2018</div>
+</div>
+
+</center>
 
  <div class="footer"></div>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript">
 
 

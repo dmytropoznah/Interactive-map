@@ -27,8 +27,6 @@ body{margin: 0; padding: 0;}
 	}
 
 	.selectPage{
-		display: none;
-		
 		width: 80%;
 		background: #80ff33;
 	}
@@ -38,7 +36,33 @@ body{margin: 0; padding: 0;}
 	}
 
 
-	/*--------------*/
+	.flex{
+		display: flex;
+		justify-content: center;
+		align-items: baseline
+	}
+
+	/*-  GRAPHIC  -*/
+
+	.graphic{
+		width: 80%;
+		background: gray;
+	}
+
+	.graphic-block{
+		width: 100px;
+		height: 200px;
+		margin: 10px;
+		background: red;
+	}
+	.graphic-text{
+		width: 100px;
+		background: orange;
+		margin: 10px;
+	}
+
+
+
 
 	/* - - -- --- - -*/
 	.footer{
@@ -46,9 +70,18 @@ body{margin: 0; padding: 0;}
 		width: 100%;
   		height: 80px;
   		float: left;
-		background: blue;
+		background: #FF8080;
 		position: absolute;
 	}
+
+
+
+
+
+
+
+
+
 	/* - - - - - - - - - - - OBLASTI - - - - - - - - - - - - - - - - */
 	.volyn{
 		height: 120px;
