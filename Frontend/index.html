@@ -5,8 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<body>
+<body onload="select()">
 
 <center>
 
@@ -100,9 +102,12 @@
                 <option value="t59">Насінники та маточники культур</option>
               </optgroup>
             </select>
+            <p>	<select id="formSelect" size="1">
+   					   <option disabled></option>
+   				 </select></p>
 
 
-            <br><button onclick="search()" style="margin-top: 10px;">ВИРАХУВАТИ</button>
+            <br><button onclick="graph()" style="margin-top: 10px;">ВИРАХУВАТИ</button>
   </div>
 </center>
 
@@ -142,6 +147,8 @@
     <div class="poiret"><h1> GRAPHICS </h1></div>     
 
 </div>
+<div id="chart_div" style="width: 100%; height: 500px;"></div>
+
 
 <div class="graphic flex">
   <div class="graphic-block"></div>
@@ -184,6 +191,92 @@
 
 
 <script type="text/javascript">
+function select() {
+
+  var instance = axios.create({
+      baseURL: "http://localhost:8080" 
+    });
+
+  function  f(kultura) {
+
+  console.log("kultura :", kultura.data.length);
+
+        for(var i = 0; i < kultura.data.length; i++){
+
+          var sel = document.getElementById('formSelect');
+          var opt = document.createElement('option');
+          
+          opt.value = i;
+          opt.text = kultura.data[i].name_kultura;
+          sel.add(opt, sel.options[i]);
+          console.log("kultura :", kultura.data.length);
+  
+        }
+         
+      }
+    
+   
+    let resp = instance.get("/map/names").then(response =>(
+      
+      f(response)
+    
+));
+
+}
+
+
+function graph(){
+	var instance = axios.create({
+        baseURL: "http://localhost:8080" 
+    });
+    let crops;
+
+
+    var sel = document.getElementById('formSelect'); //обираємо текст з селект хтмл
+    var opt = sel.options[sel.selectedIndex];
+    console.log('sfdsfds    ', opt.text);
+    let config = {
+      params: {
+          name: opt.text
+            }
+        }
+    let resp = instance.get("/map/crops", config).then(response =>(
+      crops=response
+      //console.log("crops ", response)
+));
+
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      	let array = [];
+      	for (var i = 0; i < crops.data.length; i++){
+      	    array[i] = [];
+      	}
+      	array[0][0] = 'Рік';
+      	array[0][1] = 'Посівна площа, тис. га.';
+
+      	for (let i = 1;i<crops.data.length;i++){
+      		for (let j = 0;j<1;j++){
+      		array[i][j] = parseInt(crops.data[i].year).toFixed(0);
+      		array[i][j+1] = crops.data[i].crop_area;
+      		}
+        }
+        var data = google.visualization.arrayToDataTable(array);
+
+        var options = {
+          title: crops.data[0].name_kultura,
+          hAxis: {title: 'Рік',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+  }
+
 
 
 
